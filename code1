@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        #navbar a:hover {
+            background-color: #575757;
+        }
+        #welcome-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        #welcome-section h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+        #projects {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .project-tile {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .project-tile a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .project-tile a:hover {
+            text-decoration: underline;
+        }
+        #profile-link {
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+            padding: 10px 20px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        #profile-link:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            #navbar {
+                flex-direction: column;
+            }
+            #navbar a {
+                text-align: center;
+                width: 100%;
+                padding: 15px;
+                border-top: 1px solid #444;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#projects">Projects</a>
+    <a id="profile-link" href="https://github.com/yourusername" target="_blank">My GitHub</a>
+</nav>
+
+<section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+        <h3>Project 1</h3>
+        <p>Description of project 1</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+    </div>
+    <div class="project-tile">
+        <h3>Project 2</h3>
+        <p>Description of project 2</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+    </div>
+</section>
+
+</body>
+</html>
